@@ -1,22 +1,12 @@
-# Briana y Emmanuel · Revelación de sexo
-Domingo 8 de noviembre de 2026 · Salón 7 Tesoros.
+# Briana y Emmanuel · Invitación actualizada
+Domingo 8 de noviembre de 2026 · 4:00 p. m. · Salón 7 Tesoros.
 
-## Publicar
-Todos los archivos están en una sola carpeta, incluidas las imágenes. Sube su contenido a la raíz del repositorio y reemplaza los archivos anteriores.
-Cloudflare Pages: main, Framework None, Build command vacío, Output directory /.
+Sube todos los archivos del ZIP a la raíz de tu repositorio, reemplazando los anteriores. Incluye portada.png, nubes.png y colibri.jpeg; no usa subcarpetas.
+Cloudflare Pages: main, framework None, build command vacío, output directory /.
 
-## Itinerario
-Bienvenida 4:00–5:00 p. m.; juegos 5:00–6:00 p. m.; revelación 6:15 p. m.; cena 6:45 p. m.
+Portada aprobada como imagen y botón real. Interior con las dos frases proporcionadas, sin carta adicional. Fondo fijo continuo sin mosaico vertical. Vestimenta formal relajada, vestido sencillo y camisa con pantalón. Tarjetas rosa y azul con selección, animación y confeti. Nombre y buenos deseos opcionales. Confirmación en WhatsApp al +52 613 118 3963; el invitado debe enviar el mensaje.
 
-## Fotos y videos: activación pendiente
-El botón de carga está preparado, pero necesita el enlace de recepción real. No se simula almacenamiento ni carga de archivos.
-Solución propuesta: una solicitud de archivos de Dropbox en una cuenta con espacio disponible. Los invitados no necesitan una cuenta, aunque el servicio puede pedir nombre y correo.
-1. En Dropbox: Solicitudes de archivos > Nueva solicitud.
-2. Título: Recuerdos · Briana y Emmanuel.
-3. Elige la carpeta receptora y crea la solicitud; copia su enlace, sin enviar invitaciones por correo.
-4. Pega ese enlace en photosUrl dentro de config.js. Publica el archivo actualizado.
-El botón Subir fotos y videos aparecerá y abrirá la página de carga. Los archivos quedarán en la cuenta receptora. No es una galería pública de lo enviado por otros invitados.
-El tamaño máximo por archivo y el almacenamiento dependen del plan. No usar una carpeta compartida normal como sustituto de la solicitud.
-WhatsApp queda disponible como alternativa, con archivos adjuntados manualmente por el invitado.
+Itinerario: bienvenida 4:00–5:00; juegos 5:00–6:00; revelación 6:15; cena 6:45 p. m.
 
-Nombre y buenos deseos opcionales. Team obligatorio. WhatsApp abre el mensaje; el invitado debe pulsar Enviar. Música pendiente. Textos y botones son HTML, no están incrustados en las imágenes.
+Fotos y videos: falta el enlace de recepción. Hasta agregarlo se muestra el aviso de álbum pendiente y la alternativa de WhatsApp. Para habilitar Subir fotos y videos, pega en photosUrl de config.js un enlace https de recepción de archivos (por ejemplo, una solicitud de archivos de Dropbox). El botón abre ese servicio; no hay almacenamiento propio ni una carga simulada. No uses una carpeta normal sin permisos de carga.
+Música pendiente.

@@ -48,7 +48,7 @@
     const girl = team === 'niña';
     document.querySelector('.rsvp').dataset.team = team;
     document.getElementById('team-reveal').hidden = false;
-    document.getElementById('reveal-title').textContent = `¡Tu corazón es Team ${girl ? 'Niña' : 'Niño'}!`;
+    document.getElementById('reveal-title').textContent = `¡Eres Team ${girl ? 'Niña' : 'Niño'}!`;
     document.getElementById('reveal-icon').textContent = girl ? '♡' : '☆';
     const stage = document.getElementById('celebration');
     stage.replaceChildren();

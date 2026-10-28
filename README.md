@@ -10,3 +10,5 @@ Itinerario: bienvenida 4:00–5:00; juegos 5:00–6:00; revelación 6:15; cena 6
 
 Fotos y videos: falta el enlace de recepción. Hasta agregarlo se muestra el aviso de álbum pendiente y la alternativa de WhatsApp. Para habilitar Subir fotos y videos, pega en photosUrl de config.js un enlace https de recepción de archivos (por ejemplo, una solicitud de archivos de Dropbox). El botón abre ese servicio; no hay almacenamiento propio ni una carga simulada. No uses una carpeta normal sin permisos de carga.
 Música pendiente.
+
+Itinerario actualizado con cuatro iconos SVG integrados y línea vertical suave; no requiere archivos adicionales.

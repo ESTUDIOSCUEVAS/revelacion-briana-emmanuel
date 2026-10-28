@@ -23,3 +23,47 @@
     if (validUrl(value)) { const link = document.getElementById(linkId); link.href = value; link.hidden = false; document.getElementById(pendingId).hidden = true; }
   }
 })();
+
+(() => {
+  const opening = document.getElementById('opening');
+  const content = document.getElementById('invitation-content');
+  const openButton = document.getElementById('open-invitation');
+  openButton.addEventListener('click', () => {
+    content.hidden = false;
+    content.inert = false;
+    document.body.classList.remove('sealed');
+    document.body.classList.add('entered');
+    opening.classList.add('departing');
+    window.setTimeout(() => {
+      opening.hidden = true;
+      const heading = document.querySelector('#inicio h1');
+      heading.tabIndex = -1;
+      heading.focus({preventScroll: true});
+    }, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 850);
+  });
+  let particleTimer;
+  document.getElementById('rsvp-form').addEventListener('change', event => {
+    if (event.target.name !== 'team') return;
+    const team = event.target.value;
+    const girl = team === 'niña';
+    document.querySelector('.rsvp').dataset.team = team;
+    document.getElementById('team-reveal').hidden = false;
+    document.getElementById('reveal-title').textContent = `¡Tu corazón es Team ${girl ? 'Niña' : 'Niño'}!`;
+    document.getElementById('reveal-icon').textContent = girl ? '♡' : '☆';
+    const stage = document.getElementById('celebration');
+    stage.replaceChildren();
+    clearTimeout(particleTimer);
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const colors = girl ? ['#d480a4','#eebed1','#c79a62','#fff'] : ['#679fd1','#b5d9f3','#c79a62','#fff'];
+      for (let n = 0; n < 38; n++) {
+        const p = document.createElement('i'); p.className = 'confetti';
+        p.style.setProperty('--particle', colors[n % colors.length]);
+        p.style.setProperty('--x', `${(Math.random()-.5)*window.innerWidth}px`);
+        p.style.setProperty('--y', `${100+Math.random()*window.innerHeight*.6}px`);
+        p.style.setProperty('--rot', `${Math.random()*700-350}deg`);
+        stage.append(p);
+      }
+      particleTimer = setTimeout(() => stage.replaceChildren(), 1700);
+    }
+  });
+})();

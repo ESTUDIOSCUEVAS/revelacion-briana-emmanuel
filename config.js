@@ -4,6 +4,7 @@ window.INVITATION_CONFIG = {
   locationName: 'Salón 7 Tesoros',
   locationAddress: '',
   locationUrl: 'https://maps.app.goo.gl/aqgjbtd9MDzxzx8C8',
-  // Opcional: al agregar un álbum https, sustituye el destino de fotos.
+  // Pega aquí el enlace https de recepción de archivos (por ejemplo, una solicitud de Dropbox).
+  // Sin enlace, se muestra un aviso y WhatsApp como alternativa; no se simula una carga.
   photosUrl: ''
 };

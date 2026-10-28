@@ -20,7 +20,7 @@
   function validUrl(value) { try { return new URL(value).protocol === 'https:'; } catch { return false; } }
   if (config.locationName || config.locationAddress) document.querySelector('#location-text').textContent = [config.locationName, config.locationAddress].filter(Boolean).join(' · ');
   for (const [value, linkId, pendingId] of [[config.locationUrl,'location-link','location-pending'],[config.photosUrl,'photos-link','photos-pending']]) {
-    if (validUrl(value)) { if (linkId === 'photos-link') document.querySelector('.photo-help').hidden = true; const link = document.getElementById(linkId); link.href = value; link.hidden = false; document.getElementById(pendingId).hidden = true; }
+    if (validUrl(value)) { if (linkId === 'photos-link') document.querySelector('#upload-instructions').hidden = false; const link = document.getElementById(linkId); link.href = value; link.hidden = false; document.getElementById(pendingId).hidden = true; }
   }
 })();
 

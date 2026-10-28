@@ -1,10 +1,10 @@
 # Briana y Emmanuel · Invitación actualizada
 Domingo 8 de noviembre de 2026 · 4:00 p. m. · Salón 7 Tesoros.
 
-Sube todos los archivos del ZIP a la raíz de tu repositorio, reemplazando los anteriores. Incluye portada.png, nubes.png y colibri.jpeg; no usa subcarpetas.
+Sube todos los archivos del ZIP a la raíz de tu repositorio, reemplazando los anteriores. Incluye nubes.png y colibri.jpeg; no usa subcarpetas.
 Cloudflare Pages: main, framework None, build command vacío, output directory /.
 
-Portada aprobada como imagen y botón real. Interior con las dos frases proporcionadas, sin carta adicional. Fondo fijo continuo sin mosaico vertical. Vestimenta formal relajada, vestido sencillo y camisa con pantalón. Tarjetas rosa y azul con selección, animación y confeti. Nombre y buenos deseos opcionales. Confirmación en WhatsApp al +52 613 118 3963; el invitado debe enviar el mensaje.
+Portada limpia con colibrí original y tipografía real, sin imagen generada de portada. Interior con las dos frases proporcionadas, sin carta adicional. Fondo marfil uniforme con nubes CSS muy suaves, sin mosaico vertical. Vestimenta formal relajada, vestido sencillo y camisa con pantalón. Tarjetas rosa y azul con selección, animación y confeti. Nombre y buenos deseos opcionales. Confirmación en WhatsApp al +52 613 118 3963; el invitado debe enviar el mensaje.
 
 Itinerario: bienvenida 4:00–5:00; juegos 5:00–6:00; revelación 6:15; cena 6:45 p. m.
 

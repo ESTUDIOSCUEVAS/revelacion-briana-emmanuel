@@ -16,3 +16,6 @@ Itinerario actualizado con cuatro iconos SVG integrados y línea vertical suave;
 Ajustes en revisión: fecha de portada ligeramente mayor; horarios más legibles; ropa reducida conservando la paleta; tres nubes sutiles animadas en los bordes. Movimiento desactivado cuando el dispositivo solicita movimiento reducido.
 
 Nubes revisadas: mayor presencia y recorrido lateral, animación activa comprobada en navegador. styles.css usa una versión en la URL para evitar la caché anterior.
+
+Vista previa WhatsApp: compartir.png, 1200x630, con metadatos Open Graph absolutos para https://revelacion-briana-emmanuel.pages.dev/. Si cambia el dominio hay que actualizar esos metadatos. WhatsApp puede conservar una vista previa anterior en caché.
+Nubes con ciclos de desplazamiento de 8 a 12 segundos.

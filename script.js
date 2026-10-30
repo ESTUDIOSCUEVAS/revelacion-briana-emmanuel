@@ -67,3 +67,35 @@
     }
   });
 })();
+
+// La reproducción comienza con el gesto de abrir la invitación.
+(() => {
+  const music = document.getElementById('invitation-music');
+  const toggle = document.getElementById('music-toggle');
+  const label = document.getElementById('music-label');
+  music.volume = 0.35;
+  function update() {
+    const playing = !music.paused && !music.ended;
+    toggle.setAttribute('aria-pressed', String(playing));
+    toggle.setAttribute('aria-label', playing ? 'Pausar música' : 'Reproducir música');
+    label.textContent = playing ? 'Pausar' : 'Música';
+    document.getElementById('music-symbol').textContent = playing ? 'Ⅱ' : '♫';
+  }
+  function play() {
+    const pending = music.play();
+    if (pending && typeof pending.catch === 'function') pending.catch(update);
+  }
+  document.getElementById('open-invitation').addEventListener('click', () => {
+    toggle.hidden = false;
+    play();
+  });
+  toggle.addEventListener('click', () => {
+    if (music.paused) play(); else music.pause();
+  });
+  for (const event of ['play', 'pause', 'ended']) music.addEventListener(event, update);
+  music.addEventListener('error', () => {
+    label.textContent = 'Sin audio';
+    toggle.setAttribute('aria-label', 'No se pudo cargar la música');
+    toggle.disabled = true;
+  });
+})();

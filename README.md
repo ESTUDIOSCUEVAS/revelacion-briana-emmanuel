@@ -9,6 +9,8 @@ Portada con arco fino, nubes suaves en los bordes, colibrí original y tipograf�
 Itinerario: bienvenida 4:00–5:00; juegos 5:00–6:00; revelación 6:15; cena 6:45 p. m.
 
 Fotos y videos: falta el enlace de recepción. Hasta agregarlo se muestra el aviso de álbum pendiente y la alternativa de WhatsApp. Para habilitar Subir fotos y videos, pega en photosUrl de config.js un enlace https de recepción de archivos (por ejemplo, una solicitud de archivos de Dropbox). El botón abre ese servicio; no hay almacenamiento propio ni una carga simulada. No uses una carpeta normal sin permisos de carga.
-Música pendiente.
+Música incluida: musica.mp3 (archivo proporcionado por el usuario). Comienza al tocar Abrir invitación y se repite. Botón flotante para pausar o reanudar. Si el navegador bloquea la reproducción, el invitado puede iniciarla con ese botón.
 
 Itinerario actualizado con cuatro iconos SVG integrados y línea vertical suave; no requiere archivos adicionales.
+
+Ajustes en revisión: fecha de portada ligeramente mayor; horarios más legibles; ropa reducida conservando la paleta; tres nubes sutiles animadas en los bordes. Movimiento desactivado cuando el dispositivo solicita movimiento reducido.

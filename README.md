@@ -14,3 +14,5 @@ Música incluida: musica.mp3 (archivo proporcionado por el usuario). Comienza al
 Itinerario actualizado con cuatro iconos SVG integrados y línea vertical suave; no requiere archivos adicionales.
 
 Ajustes en revisión: fecha de portada ligeramente mayor; horarios más legibles; ropa reducida conservando la paleta; tres nubes sutiles animadas en los bordes. Movimiento desactivado cuando el dispositivo solicita movimiento reducido.
+
+Nubes revisadas: mayor presencia y recorrido lateral, animación activa comprobada en navegador. styles.css usa una versión en la URL para evitar la caché anterior.

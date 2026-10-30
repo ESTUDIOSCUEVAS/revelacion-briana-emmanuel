@@ -19,3 +19,5 @@ Nubes revisadas: mayor presencia y recorrido lateral, animación activa comproba
 
 Vista previa WhatsApp: compartir.png, 1200x630, con metadatos Open Graph absolutos para https://revelacion-briana-emmanuel.pages.dev/. Si cambia el dominio hay que actualizar esos metadatos. WhatsApp puede conservar una vista previa anterior en caché.
 Nubes con ciclos de desplazamiento de 8 a 12 segundos.
+
+Vista previa rediseñada: compartir-invitacion.png (1727x911), colibrí en acuarela, nubes y arco fino. Open Graph actualizado a la nueva imagen.

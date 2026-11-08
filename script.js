@@ -106,11 +106,10 @@
   const $ = id => document.getElementById(id);
   const files = $('album-files');
   const choose = $('choose-files');
-  const view = $('view-album');
   const grid = $('album-grid');
   const status = $('album-status');
   const progress = $('upload-progress');
-  let cursor = null, loading = false;
+  let cursor = null, loading = false, buffered = [];
   const types = {'jpg':'image/jpeg','jpeg':'image/jpeg','png':'image/png','webp':'image/webp','gif':'image/gif','heic':'image/heic','heif':'image/heif','mp4':'video/mp4','mov':'video/quicktime','webm':'video/webm'};
   function mediaUrl(value) {
     const url = new URL(value);
@@ -138,22 +137,32 @@
     if (loading) return;
     loading = true; $('refresh-album').disabled = true; $('more-photos').disabled = true;
     status.textContent = 'Cargando recuerdos…';
-    if (reset) { cursor = null; grid.replaceChildren(); }
+    if (reset) { cursor = null; buffered = []; grid.replaceChildren(); }
     try {
+      if (!buffered.length) {
       const response = await fetch(api + '/api/photos' + (cursor ? '?cursor=' + encodeURIComponent(cursor) : ''));
       const data = await response.json();
       if (!response.ok) throw new Error(data.error || 'No se pudo cargar el álbum.');
-      data.items.forEach(render); cursor = data.cursor;
-      $('more-photos').hidden = !cursor;
+      buffered = data.items; cursor = data.cursor;
+      }
+      buffered.splice(0, 6).forEach(render);
+      $('more-photos').hidden = !cursor && !buffered.length;
       status.textContent = grid.children.length ? '' : 'Aún no hay recuerdos. Puedes compartir el primero.';
     } catch (error) { status.textContent = error.message + ' Pulsa Actualizar álbum para intentar de nuevo.'; }
     finally { loading = false; $('refresh-album').disabled = false; $('more-photos').disabled = false; }
   }
-  view.addEventListener('click', () => {
-    const content = $('album-content'); content.hidden = !content.hidden;
-    view.setAttribute('aria-expanded', String(!content.hidden)); view.textContent = content.hidden ? 'Ver álbum' : 'Ocultar álbum';
-    if (!content.hidden) load(true);
+  $('open-album').addEventListener('click', () => {
+    $('open-invitation').click();
+    setTimeout(() => {
+      const section = $('recuerdos'); section.tabIndex = -1;
+      section.focus({preventScroll:true});
+      section.scrollIntoView({behavior:'auto',block:'start'});
+    }, 900);
   });
+  const observer = new IntersectionObserver(entries => {
+    if(entries.some(entry => entry.isIntersecting)) { load(true); observer.disconnect(); }
+  }, {rootMargin:'200px'});
+  observer.observe($('recuerdos'));
   $('refresh-album').addEventListener('click', () => load(true));
   $('more-photos').addEventListener('click', () => load());
   $('close-photo').addEventListener('click', () => $('photo-dialog').close());

@@ -1,25 +1,9 @@
-# Briana y Emmanuel · Invitación actualizada
-Domingo 8 de noviembre de 2026 · 4:00 p. m. · Salón 7 Tesoros.
+# Invitación Briana y Emmanuel
 
-Sube todos los archivos del ZIP a la raíz de tu repositorio, reemplazando los anteriores. Incluye nubes.png y colibri.jpeg; no usa subcarpetas.
-Cloudflare Pages: main, framework None, build command vacío, output directory /.
+Sube todos los archivos de esta carpeta a la raíz del repositorio existente. No se necesita carpeta assets ni comando de compilación.
 
-Portada con arco fino, nubes suaves en los bordes, colibrí original y tipografía real. Interior con las dos frases proporcionadas, sin carta adicional. Fondo de nubes continuo sin mosaico vertical, con zonas claras para leer. Vestimenta formal relajada, vestido sencillo y camisa con pantalón. Tarjetas rosa y azul con selección, animación y confeti. Nombre y buenos deseos opcionales. Confirmación en WhatsApp al +52 613 118 3963; el invitado debe enviar el mensaje.
+El álbum usa https://album-briana-emmanuel.losestudioscuevas.workers.dev y el binding ALBUM al bucket recuerdos-briana-emmanuel. El Worker se administra por separado en Cloudflare; este paquete contiene la invitación.
 
-Itinerario: bienvenida 4:00–5:00; juegos 5:00–6:00; revelación 6:15; cena 7:00 p. m.
+Prueba después del despliegue: abrir invitación, subir una foto pequeña, comprobar mensaje de éxito, abrir Ver álbum, ampliar foto y probar video MP4. Las cargas admiten 50 MB por archivo. HEIC y algunos MOV pueden guardarse aunque el navegador no permita previsualizarlos; se ofrece abrir el original.
 
-Fotos y videos: falta el enlace de recepción. Hasta agregarlo se muestra el aviso de álbum pendiente y la alternativa de WhatsApp. Para habilitar Subir fotos y videos, pega en photosUrl de config.js un enlace https de recepción de archivos (por ejemplo, una solicitud de archivos de Dropbox). El botón abre ese servicio; no hay almacenamiento propio ni una carga simulada. No uses una carpeta normal sin permisos de carga.
-Música incluida: musica.mp3 (archivo proporcionado por el usuario). Comienza al tocar Abrir invitación y se repite. Botón flotante para pausar o reanudar. Si el navegador bloquea la reproducción, el invitado puede iniciarla con ese botón.
-
-Itinerario actualizado con cuatro iconos SVG integrados y línea vertical suave; no requiere archivos adicionales.
-
-Ajustes en revisión: fecha de portada ligeramente mayor; horarios más legibles; ropa reducida conservando la paleta; tres nubes sutiles animadas en los bordes. Movimiento desactivado cuando el dispositivo solicita movimiento reducido.
-
-Nubes revisadas: mayor presencia y recorrido lateral, animación activa comprobada en navegador. styles.css usa una versión en la URL para evitar la caché anterior.
-
-Vista previa WhatsApp: compartir.png, 1200x630, con metadatos Open Graph absolutos para https://revelacion-briana-emmanuel.pages.dev/. Si cambia el dominio hay que actualizar esos metadatos. WhatsApp puede conservar una vista previa anterior en caché.
-Nubes con ciclos de desplazamiento de 8 a 12 segundos.
-
-Vista previa rediseñada: compartir-invitacion.png (1727x911), colibrí en acuarela, nubes y arco fino. Open Graph actualizado a la nueva imagen.
-
-Actualización: cena 7:00 p. m.; DOMINGO y hora de inicio ligeramente mayores, manteniendo las proporciones de la fecha central.
+El álbum no requiere cuenta y los archivos son accesibles mediante su enlace. El Worker actual valida origen y formato declarado, pero no autentica invitados ni limita el total de almacenamiento. La comprobación inicial de conexión no sustituye una prueba real de carga y lectura.
